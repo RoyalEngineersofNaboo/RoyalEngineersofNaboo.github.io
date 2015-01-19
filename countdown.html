@@ -4,27 +4,6 @@
     <meta charset='utf-8'>
     <title>Count Down</title>
   </head>
-
-<script src="http://royalengineersofnaboo.github.io/countdown.js"></script>
-
-<script>
-  var clock = document.getElementById("countdown-holder")
-    , targetDate = new Date(2050, 00, 01); // Jan 1, 2050
- 
-  clock.innerHTML = countdown(targetDate).toString();
-</script>
-
-<script>
-  var clock = document.getElementById("countdown-holder")
-    , targetDate = new Date(2050, 00, 01); // Jan 1, 2050;
- 
-  clock.innerHTML = countdown(targetDate).toString();
-  setInterval(function(){
-    clock.innerHTML = countdown(targetDate).toString();
-  }, 1000);
-</script>
-
-  
 <body style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;background-color:#545454">
 <span style="color:#FFFFFF">
   <header>
@@ -34,11 +13,27 @@
 	font-weight: 500;
 	line-height: 26px;">Royal Engineers of Naboo</h1>
 	
-	<h1 id="countdown-holder"></h1>
-
 <p>
 <p>
 <hr>
+
+
+
+<strong>Result</strong>
+<blockquote>
+<p>Countdown until 2050</p>
+<h1 id="countdown-holder"></h1>
+<script src="http://royalengineersofnaboo.github.io/countdown.js"></script>
+  <script>
+    var clock = document.getElementById("countdown-holder")
+    , targetDate = new Date(2050, 00, 01);
+    clock.innerHTML = countdown(targetDate ).toString(); 
+    setInterval(function(){
+      clock.innerHTML = countdown(targetDate).toString();
+    }, 1000);
+  </script>
+</blockquote>
+
 	
 	
             <h2 style = "font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
