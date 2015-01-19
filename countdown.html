@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<script src="http://royalengineersofnaboo.github.io/countdown.js"></script>
+
+<script>
+  var clock = document.getElementById("countdown-holder")
+    , targetDate = new Date(2050, 00, 01); // Jan 1, 2050
+ 
+  clock.innerHTML = countdown(targetDate).toString();
+</script>
+
+<script>
+  var clock = document.getElementById("countdown-holder")
+    , targetDate = new Date(2050, 00, 01); // Jan 1, 2050;
+ 
+  clock.innerHTML = countdown(targetDate).toString();
+  setInterval(function(){
+    clock.innerHTML = countdown(targetDate).toString();
+  }, 1000);
+</script>
+
+<HTML>
+<head>
+    <meta charset='utf-8'>
+    <title>Welcome</title>
+  </head>
+  
+<body style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;background-color:#545454">
+<span style="color:#FFFFFF">
+  <header>
+            <h1 STYLE="font-size: 42px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26px;">Royal Engineers of Naboo</h1>
+	
+	<h1 id="countdown-holder"></h1>
+
+<p>
+<p>
+<hr>
+	
+	
+            <h2 style = "font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 38px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 22px;">Heading 2</h2>
+      </header>
+      
+        <h3 style ="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 32px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15px;">Heading 3
+        </h3>
+<p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 28px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 32px;">This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+
+<p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 28px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 32px;">If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+</span>
+  </body>
+</html>
